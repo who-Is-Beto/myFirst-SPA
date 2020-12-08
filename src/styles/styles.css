@@ -8,6 +8,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: #15302C;
+}
+
 .Header-main {
   display: flex;
   justify-content: space-between;
@@ -71,7 +76,7 @@ body {
 
 .Characters-item {
   text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  box-shadow: 8px 14px 38px black;
   border-radius: 5px;
   margin: 0 0 20px 0;
   display: block;
@@ -119,4 +124,14 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 360px){
+  .Characters{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  img{
+    border-radius: 12px 12px 0 0;
+  }
 }
